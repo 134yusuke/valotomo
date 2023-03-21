@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  location_id: MyString
+  point_id: MyString
+  result_id: MyString
+  explain: MyText
+  user_id: 1
+
+two:
+  name: MyText
+  location_id: MyString
+  point_id: MyString
+  result_id: MyString
+  explain: MyText
+  user_id: 1

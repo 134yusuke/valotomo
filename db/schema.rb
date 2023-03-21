@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_21_150042) do
+ActiveRecord::Schema.define(version: 2023_03_21_153430) do
+
+  create_table "toukous", force: :cascade do |t|
+    t.text "name"
+    t.string "location_id"
+    t.string "point_id"
+    t.string "result_id"
+    t.text "explain"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
