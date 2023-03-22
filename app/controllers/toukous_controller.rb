@@ -14,6 +14,7 @@ class ToukousController < ApplicationController
   end
   
   def show
+    @toukou=Toukou.find(params[:id])
   end
   
   def destroy
