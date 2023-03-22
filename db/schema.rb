@@ -13,7 +13,8 @@
 ActiveRecord::Schema.define(version: 2023_03_21_153430) do
 
   create_table "toukous", force: :cascade do |t|
-    t.text "name"
+    t.string "map"
+    t.text "title"
     t.string "location_id"
     t.string "point_id"
     t.string "result_id"

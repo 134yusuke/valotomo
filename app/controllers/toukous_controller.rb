@@ -7,7 +7,7 @@ class ToukousController < ApplicationController
     @toukou=Toukou.new(toukou_params)
     @toukou.user_id=current_user.id
     @toukou.save
-    redirect_to toukou_path
+    redirect_to toukou_path(@toukou.id)
   end
   
   def index
